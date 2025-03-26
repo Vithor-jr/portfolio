@@ -1,0 +1,37 @@
+.container {
+	width: 30vw;
+	height: calc(30vw * (358/545));
+	background: blur(20px);
+	border-radius: 20px;
+	padding: 2vw;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.image {
+	filter: invert(1);
+}
+
+@media (max-width: 899px) {
+	.container {
+		width: 40vw;
+		height: calc(40vw * (358/545));
+	}
+}
+
+.noselect {
+	user-select: none; 
+  -webkit-user-drag: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 90vw;
+		height: calc(90vw * (358/545));
+		padding: 4vw;
+	}
+}
+

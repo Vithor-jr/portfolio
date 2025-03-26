@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Studus",
+    "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "ano": 2022,
+    "video": "/video.mp4",
+    "tecnologias": [
+			{"nome" : "JavaScript"}, 
+			{"nome" : "NodeJS"},
+			{"nome" : "ReactN"}
+		],
+		"link": "https://studus-eva.vercel.app"
+  },
+	{
+    "titulo": "Eva web",
+    "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "ano": 2022,
+    "video": "/video.mp4",
+    "tecnologias": [
+			{"nome" : "NodeJS"},
+			{"nome" : "Tailwind"},
+			{"nome" : "CSS"},
+			{"nome" : "NextJS"}, 
+			{"nome" : "TypeScript"},
+			{"nome" : "React"}
+		],
+		"link": "https://studus-eva.vercel.app"
+  },
+	{
+    "titulo": "API Studus",
+    "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "ano": 2022,
+    "video": "/video.mp4",
+    "tecnologias": [
+			{"nome" : "TypeScript"},
+			{"nome" : "NodeJS"}, 
+			{"nome" : "Insomnia"},
+			{"nome" : "NestJS"},
+			{"nome" : "Prisma"},
+			{"nome" : "PostgreSql"}
+		],
+		"link": "https://studus-eva.vercel.app"
+  }
+]

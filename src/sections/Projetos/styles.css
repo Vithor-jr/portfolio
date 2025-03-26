@@ -1,0 +1,23 @@
+.noselect {
+	user-select: none; 
+  -webkit-user-drag: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.container_bolinha {
+  min-height: 15px;
+  position: absolute;
+  top: 10; 
+  z-index: 99;
+  min-width: 15px;
+  width: 1.5vw;
+  height: 1.5vw; 
+  background-color: #1F3EF5;
+  border-radius: 2vw;
+}
+
+.container_bolinha::before {
+  
+}
+
