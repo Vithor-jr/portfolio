@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fullpage/react-fullpage": "^0.1.48",
     "@radix-ui/react-slot": "^1.1.2",
     "@react-three/drei": "^10.0.4",

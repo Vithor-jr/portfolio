@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import Projeto from '@/components/projeto';
 import './styles.css'
 import projetos from '../../data/projetos.json'
@@ -12,6 +12,7 @@ export default function Projetos() {
 			{projetos.map((projeto, index) => (
         <Projeto
 					key={index}
+					image={projeto.image}
 					link={projeto.link}
 					isFirst={index === 0}
 					isLast={index === projetos.length - 1} 

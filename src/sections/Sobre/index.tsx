@@ -23,6 +23,7 @@ import NextJs from '../../assets/APIs/Next.svg'
 import Postgree from '../../assets/APIs/post.svg'
 
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 const ItemLanguage = ({image, label, href}:{image:string, label:string, href:string}) => {
 	return(
@@ -35,37 +36,63 @@ const ItemLanguage = ({image, label, href}:{image:string, label:string, href:str
 	)
 }
 
-const ItemBackend = ({image, label, href}:{image:string, label:string, href:string}) => {
-	const {theme} = useTheme()
+const ItemBackend = ({ image, label, href }: { image: string, label: string, href: string }) => {
+  const { theme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-	return(
-		<div className='flex flex-col items-center'>
-			<a href={href} target="_blank" rel="noopener noreferrer" className='cursor-pointer flex items-center justify-center max-[601px]:h-[14vw] max-[900px]:h-[5vw] h-[4vw] dark:hover:bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(0,0,0,0.1)] rounded-[5px] p-1'>
-				{
-					(label === "Next.js" && theme === 'light') || (label === "Express.js" && theme === 'dark') ?
-					<Image src={image} className={`${styles.image} max-[601px]:w-[14vw] max-[900px]:w-[5vw] w-[4vw] ${styles.noselect}`} alt={label}/>
-					:
-					<Image src={image} className={`max-[601px]:w-[14vw] max-[900px]:w-[5vw] w-[4vw] ${styles.noselect}`} alt={label}/>
-				}
-			</a>
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
-			<h1 className='text-[1vw] text-center max-[900px]:text-[1.5vw] max-[601px]:text-[3.4vw] font-medium text-black dark:text-white'>{label}</h1>
-		</div>
-	)
+  const isNextJsLight = label === "Next.js" && theme === 'light'
+  const isExpressJsDark = label === "Express.js" && theme === 'dark'
+
+  return (
+    <div className='flex flex-col items-center'>
+      <a href={href} target="_blank" rel="noopener noreferrer"
+        className='cursor-pointer flex items-center justify-center max-[601px]:h-[14vw] max-[900px]:h-[5vw] h-[4vw] 
+        dark:hover:bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(0,0,0,0.1)] rounded-[5px] p-1'>
+        {mounted ? (
+          <Image
+            src={image}
+            className={`max-[601px]:w-[14vw] max-[900px]:w-[5vw] w-[4vw] ${isNextJsLight || isExpressJsDark ? styles.image : ''} ${styles.noselect}`}
+            alt={label}
+          />
+        ) : (
+          <div className="w-[4vw] h-[4vw] bg-gray-200 dark:bg-gray-800 rounded-[5px] animate-pulse" />
+        )}
+      </a>
+
+      <h1 className='text-[1vw] text-center max-[900px]:text-[1.5vw] max-[601px]:text-[3.4vw] font-medium text-black dark:text-white'>
+        {label}
+      </h1>
+    </div>
+  )
 }
 
 const ItemFrontEnd = ({image, label, href}:{image:string, label:string, href:string}) => {
-	const {theme} = useTheme()
+	const { theme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const isNextJsLight = label === "Next.js" && theme === 'light'
+  const isExpressJsDark = label === "Express.js" && theme === 'dark'
 
 	return(
 		<div className='flex flex-col items-center'>
 			<a href={href} target="_blank" rel="noopener noreferrer" className='cursor-pointer flex items-center justify-center max-[601px]:h-[20vw] max-[901px]:h-[6vw] h-[7vw] dark:hover:bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(0,0,0,0.1)] rounded-[5px] p-1'>
-				{
-				(label === "Next.js" && theme === 'light') ?
-				<Image src={image} className={`${styles.image} max-[601px]:w-[18vw] max-[901px]:w-[6vw] w-[7vw]  ${styles.noselect}`} alt={label}/>
-				:
-				<Image src={image} className={`max-[601px]:w-[18vw] max-[900px]:w-[6vw] w-[7vw] ${styles.noselect}`} alt={label}/>
-				}
+			{mounted ? (
+          <Image
+            src={image}
+            className={`max-[601px]:w-[18vw] max-[901px]:w-[6vw] w-[7vw] ${isNextJsLight || isExpressJsDark ? styles.image : ''} ${styles.noselect}`}
+            alt={label}
+          />
+        ) : (
+          <div className="w-[4vw] h-[4vw] bg-gray-200 dark:bg-gray-800 rounded-[5px] animate-pulse" />
+        )}
 			</a>
 
 			<h1 className='text-[1vw] text-center max-[900px]:text-[1.5vw] max-[600px]:text-[3.4vw] font-medium text-black dark:text-white'>{label}</h1>
@@ -131,7 +158,7 @@ export default function Sobre(){
 						</div>
 					</div>
 
-					<div className={`${styles.container} flex flex-col dark:shadow-[inset_0px_0px_1px_white] shadow-[inset_0px_0px_1px_black]  bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(255,255,255,0.1)]`}>
+					<div className={`${styles.container} flex flex-col dark:shadow-[inset_0px_0px_1px_white] shadow-[inset_0px_0px_1px_gray]  bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(255,255,255,0.1)]`}>
 						<Image src={Luz} alt='luz' className={`${styles.noselect} absolute top-[-0.85vw] max-[600px]:top-[-2.3vw] max-[600px]:w-[28vw] max-[900px]:top-[-1.14vw] max-[900px]:w-[13vw] w-[10vw]`}/>
 						
 						<div className='flex gap-2 items-center'>

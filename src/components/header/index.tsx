@@ -38,7 +38,7 @@ export default function Header() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.2 }
     );
 
     sections.forEach((section) => {
@@ -60,7 +60,7 @@ export default function Header() {
   };
 
   return (
-    <header style={{ position: open ? 'fixed' : 'sticky' }} className="flex top-0 w-full h-10 bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(0,0,0,0.5)] z-5 items-center justify-center">
+    <header style={{ position: open ? 'fixed' : 'sticky' }} className="flex top-0 w-full h-10 bg-[rgba(255,255,255,1)] dark:bg-[rgba(0,0,0,1)] z-15 items-center justify-center">
       <div className="absolute left-5 z-5">
         <Logo width={100} />
       </div>
@@ -152,7 +152,7 @@ export default function Header() {
         <motion.div
           initial={{ y: -100 }}
           animate={{ y: 0 }}
-          className="top-10 w-full gap-2 py-2 flex items-center flex-col absolute border-y-2 z-1"
+          className="bg-[rgba(255,255,255,1)] dark:bg-[rgba(0,0,0,1)] top-10 w-full gap-2 py-2 flex items-center flex-col absolute border-y-2 z-1"
         >
           <button
             className={`cursor-pointer px-5 rounded font-medium ${
