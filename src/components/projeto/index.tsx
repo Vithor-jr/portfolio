@@ -71,7 +71,7 @@ export default function Projeto({ titulo, image, link, descricao, ano, video, te
             className="w-full relative flex flex-row justify-between max-[901px]:flex-col gap-[2vw]"
           > 
           
-          <div className="w-[50vw] max-[900px]:w-full max-[900px]:h-[calc(100%*(503/758))] relative">
+          <div className="w-[50vw] max-[901px]:w-full max-[901px]:h-[calc(100%*(503/758))] relative">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               grabCursor={true}
@@ -174,7 +174,7 @@ export default function Projeto({ titulo, image, link, descricao, ano, video, te
 
               <p className="text-[#0084FF] text-[1.2vw] max-[900px]:text-[1rem] font-bold">Tecnologias usadas</p>
               
-              <div className="flex flex-col min-h-[20px] max-h-[calc(4.5vw+1rem)] max-[900px]:flex-row min-[900px]:flex-wrap description  gap-4 overflow-x-auto description">
+              <div className="flex flex-col min-h-[20px] max-h-[calc(4.5vw+1rem)] max-[900px]:flex-row min-[900px]:flex-wrap gap-4 overflow-x-auto description">
                 {tecnologias.map((tech) => (
                   <Tecnologia key={tech.nome} nome={tech.nome} />
                 ))}

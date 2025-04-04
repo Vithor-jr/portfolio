@@ -10,6 +10,7 @@ export default function Inicio(){
 			<motion.div
 				initial={{opacity:0}}
 				whileInView={{ opacity: 1}}
+				viewport={{once:true}}
 				transition={{duration:1, type:'keyframes', delay:1}}
 				className='absolute min-w-[160vw] max-[600px]:bottom-[-30vw] bottom-[-33vw]'
 			>
@@ -19,7 +20,7 @@ export default function Inicio(){
 			<div className='flex items-center flex-col relative'>
 				<motion.h2 
 					initial={{ clipPath: 'inset(0 50% 0 50%)', opacity: 0 }}
-					viewport={{once:true}}
+				
 					transition={{type:'spring', duration:1, delay:0.5}}
 					whileInView={{ clipPath: 'inset(0 0% 0 0%)', opacity: 1 }} 
 					className='text_gradient'>
@@ -28,7 +29,7 @@ export default function Inicio(){
 
 				<motion.h1
 					initial={{ clipPath: 'inset(0 50% 0 50%)', opacity: 0 }}
-					viewport={{once:true}}
+					
 					transition={{type:'spring', duration:1, delay:0.5}}
 					whileInView={{ clipPath: 'inset(0 0% 0 0%)', opacity: 1 }} 
 					className="text-black dark:text-white font-semibold max-[600px]:text-[4.5vw] text-[3.5vw]">
@@ -37,7 +38,7 @@ export default function Inicio(){
 
 				<motion.div 
 					initial={{ clipPath: 'inset(0 50% 0 50%)', opacity: 0 }}
-					viewport={{once:true}}
+					
 					transition={{type:'spring', duration:1, delay:0.5}}
 					whileInView={{ clipPath: 'inset(0 0% 0 0%)', opacity: 1 }}
 					className="flex items-center relative">

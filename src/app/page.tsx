@@ -100,7 +100,7 @@ export default function Home() {
 
 
   return (
-    <div className={`${poppins.className} w-full min-h-[100dvh] dark:bg-black bg-white`}>
+    <div className={`${poppins.className} overflow-x-hidden w-full min-h-[100dvh] dark:bg-black bg-white`}>
       {alert && <Alert message={alert.message} type={alert.type} onClose={closeAlert} />}
       <Header/>
       <Inicio/>
