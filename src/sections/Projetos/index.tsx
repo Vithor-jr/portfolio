@@ -12,6 +12,7 @@ export default function Projetos() {
 			{projetos.map((projeto, index) => (
         <Projeto
 					key={index}
+					repositorio={projeto.repositorio}
 					image={projeto.image}
 					link={projeto.link}
 					isFirst={index === 0}

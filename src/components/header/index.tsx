@@ -60,7 +60,7 @@ export default function Header() {
   };
 
   return (
-    <header style={{ position: open ? 'fixed' : 'sticky' }} className="flex top-0 w-full h-10 bg-[rgba(255,255,255,1)] dark:bg-[rgba(0,0,0,1)] z-15 items-center justify-center">
+    <header className="flex fixed top-0 w-full h-10 bg-[rgba(255,255,255,1)] dark:bg-[rgba(0,0,0,1)] z-15 items-center justify-center">
       <div className="absolute left-5 z-5">
         <Logo width={100} />
       </div>

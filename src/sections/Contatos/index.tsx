@@ -59,7 +59,7 @@ export default function Contatos({form, handleChange, handleSubmit}:Props){
 				transition={{type:'spring', duration:1, delay:0.5}}
 				whileInView={{ clipPath: 'inset(0 0% 0 0%)', opacity: 1 }}
 				className="z-2 mt-[2vw] mb-[2vw] max-[600px]:mb-[8vw] max-[600px]:text-[5vw] text-black dark:text-white text-[3vw] w-[70vw] text-center font-bold">A Tecnologia é uma ferramenta. Vamos construir o
-  			<span className="text-[#0800AA]"> futuro</span> juntos?
+  			<span className="text-[#0084FF]"> futuro</span> juntos?
 			</motion.h1>
 
 			

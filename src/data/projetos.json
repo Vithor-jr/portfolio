@@ -2,58 +2,61 @@
   {
     "titulo": "Studus",
     "descricao": [
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-		],
+      "O Studus é um aplicativo mobile desenvolvido para auxiliar estudantes do Ensino Médio na organização de suas atividades acadêmicas e no cuidado com a saúde emocional. Com foco em uma abordagem holística, o aplicativo busca melhorar a experiência escolar ao integrar planejamento de estudos e suporte emocional em um único ambiente.",
+      "Entre suas principais funcionalidades estão: agenda interativa para organização de tarefas, registro diário de humor, visualização de gráficos de desempenho acadêmico e emocional, sistema de notificações e um painel centralizado com as informações mais importantes do dia. A interface é intuitiva, responsiva e voltada para facilitar a rotina dos estudantes.",
+      "O aplicativo foi desenvolvido em React Native. É integrado a uma API REST contruída em NestJS. Os dados emocionais e acadêmicos são protegidos com boas práticas de segurança e privacidade."
+    ],
     "ano": 2022,
     "video": "/videos/video.mp4",
     "tecnologias": [
-			{"nome" : "JavaScript"}, 
-			{"nome" : "NodeJS"},
-			{"nome" : "ReactN"}
-		],
-		"image":"/images/studus.svg",
-		"link": "https://studus-eva.vercel.app"
+      { "nome": "JavaScript" },
+      { "nome": "NodeJS" },
+      { "nome": "ReactN" }
+    ],
+    "image": "/images/studus.svg",
+    "link": "",
+    "repositorio": "https://github.com/Vithor-jr/studUs.git"
   },
-	{
+  {
     "titulo": "Eva web",
-		"descricao": [
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    "descricao": [
+      "O Eva é um assistente virtual interativo oferecido na versão web do Studus. A interface permite conversas em linguagem natural, oferecendo orientações de organização e conselhos sobre bem-estar.",
+      "A Eva utiliza a API da Gemini (Google) para gerar respostas personalizadas e contextualizadas, simulando uma conversa humanizada e empática. Os estudantes podem interagir com a assistente tanto para questões escolares quanto para momentos de dificuldade emocional, recebendo respostas em tempo real.",
+			"Este protótipp oferece recursos como geração de algoritimos em diversas linguagens de programação, listas e tabelas, reconhecimento de voz, armazenamentos de conversas, etc."
 		],
-		"ano": 2022,
-    "video": "/videos/video.mp4",
+    "ano": 2022,
+    "video": "/videos/eva_web.mp4",
     "tecnologias": [
-			{"nome" : "NodeJS"},
-			{"nome" : "Tailwind"},
-			{"nome" : "CSS"},
-			{"nome" : "NextJS"}, 
-			{"nome" : "TypeScript"},
-			{"nome" : "React"}
-		],
-		"image":"/images/eva.svg",
-		"link": "https://studus-eva.vercel.app"
+      { "nome": "NodeJS" },
+      { "nome": "Tailwind" },
+      { "nome": "CSS" },
+      { "nome": "NextJS" },
+      { "nome": "TypeScript" },
+      { "nome": "React" }
+    ],
+    "image": "/images/eva.svg",
+    "link": "https://studus-eva.vercel.app",
+    "repositorio": "https://github.com/Vithor-jr/eva_web.git"
   },
-	{
+  {
     "titulo": "API Studus",
-		"descricao": [
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-		],
-		"ano": 2022,
+    "descricao": [
+      "A API Studus é a base de dados e lógica de negócio por trás do aplicativo e da assistente Eva, sendo responsável pelo gerenciamento de usuários, atividades acadêmicas, registros de humor e interações com o assistente virtual.",
+      "Desenvolvida com o framework NestJS e escrita em TypeScript, a API segue arquitetura modular e escalável, integrando-se ao banco de dados PostgreSQL através do Prisma ORM. Também realiza integração com a API da OpenAI, permitindo que o assistente virtual responda a perguntas de forma inteligente.",
+      "Entre os recursos implementados estão: autenticação segura com JWT, criptografia de senhas, endpoints RESTful bem definidos, testes automatizados e validação de dados. A API garante performance, segurança e estrutura robusta para suportar o crescimento da plataforma."
+    ],
+    "ano": 2022,
     "video": "/videos/video.mp4",
     "tecnologias": [
-			{"nome" : "TypeScript"},
-			{"nome" : "NodeJS"}, 
-			{"nome" : "Insomnia"},
-			{"nome" : "NestJS"},
-			{"nome" : "Prisma"},
-			{"nome" : "PostgreSql"}
-		],
-		"image":"/images/studus.svg",
-		"link": "https://studus-eva.vercel.app"
+      { "nome": "TypeScript" },
+      { "nome": "NodeJS" },
+      { "nome": "Insomnia" },
+      { "nome": "NestJS" },
+      { "nome": "Prisma" },
+      { "nome": "PostgreSql" }
+    ],
+    "image": "/images/studus.svg",
+    "link": "",
+    "repositorio": "https://github.com/Vithor-jr/Studus_BackEnd.git"
   }
 ]

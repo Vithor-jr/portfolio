@@ -9,7 +9,7 @@ import Projetos from "@/sections/Projetos";
 import Contatos from "@/sections/Contatos";
 import { useTheme } from "next-themes";
 import Alert from "@/components/alert";
-
+import MagicCursor from "@/components/Cursor";
 interface ChangeEvent {
   target: {
     name: string;
@@ -30,6 +30,7 @@ export default function Home() {
   const [alert, setAlert] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
   const [form, setForm] = useState({ nome: "", email: "", mensagem: "" });
 
+  
   useEffect(()=>{
     if(theme !== 'light' && theme !== 'dark'){
       setTheme('dark')
@@ -100,8 +101,11 @@ export default function Home() {
 
 
   return (
-    <div className={`${poppins.className} overflow-x-hidden w-full min-h-[100dvh] dark:bg-black bg-white`}>
+    <div className={`${poppins.className} relative overflow-x-hidden w-full min-h-[100dvh] dark:bg-black bg-white`}>
       {alert && <Alert message={alert.message} type={alert.type} onClose={closeAlert} />}
+      <div className="-z-20">
+        <MagicCursor/>
+      </div>
       <Header/>
       <Inicio/>
       <Sobre/>
