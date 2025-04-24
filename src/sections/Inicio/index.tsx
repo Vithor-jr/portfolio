@@ -6,7 +6,7 @@ import Fundo from '../../assets/fundo (2).svg'
 
 export default function Inicio(){
 	return(
-		<section id="inicio" className="min-h-[50vw] max-[600px]:min-h-[70vw] relative w-full overflow-x-clip items-center justify-center flex flex-col">
+		<section id="inicio" className="max-[500px]:min-h-[100vw] mt-10 min-h-[50vw] max-[600px]:min-h-[70vw] relative w-full overflow-x-clip items-center justify-center flex flex-col">
 
 			<motion.div
 				initial={{opacity:0}}

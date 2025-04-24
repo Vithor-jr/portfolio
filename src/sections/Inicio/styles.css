@@ -14,9 +14,16 @@
 }
 @media (max-width:600px) {
   .text_gradient_animate {
+    font-size: 0.8rem;
+    width: 14.6rem;
+    animation: mark 1s step-end infinite, write4 10s steps(22, end) infinite; 
+  }
+}
+@media (max-width:350px) {
+  .text_gradient_animate {
     font-size: 0.6rem;
     width: 11.1rem;
-    animation: mark 1s step-end infinite, write2 10s steps(22, end) infinite; 
+    animation: mark 1s step-end infinite, write3 10s steps(22, end) infinite; 
   }
 }
 @media (min-width: 1300px){
@@ -73,7 +80,20 @@
     width: 0;
   }
 }
-
+@keyframes write4 {
+  20% {
+    width: 14.6rem;
+  }
+  70% {
+    width: 14.6rem;
+  }
+  85% {
+    width: 0;;
+  }
+  100% {
+    width: 0;
+  }
+}
 
 .noselect {
 	user-select: none; 
