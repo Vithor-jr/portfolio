@@ -23,6 +23,7 @@ interface SubmitEvent {
 
 
 import emailjs from '@emailjs/browser';
+import CardNeon from "@/components/cardNeon";
 
 export default function Home() {
   const [widthScreen, setWidthScreen] = useState<number>(0);
@@ -99,7 +100,7 @@ export default function Home() {
 
   const closeAlert = () => setAlert(null);
 
-
+  
   return (
     <div className={`${poppins.className} relative overflow-x-hidden w-full min-h-[100dvh] dark:bg-black bg-white`}>
       {alert && <Alert message={alert.message} type={alert.type} onClose={closeAlert} />}
@@ -110,4 +111,5 @@ export default function Home() {
       <Contatos form={form} handleChange={handleChange} handleSubmit={handleSubmit}/>
     </div>
   );
+
 }

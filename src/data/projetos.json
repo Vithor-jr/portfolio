@@ -7,7 +7,7 @@
       "O aplicativo foi desenvolvido em React Native. É integrado a uma API REST contruída em NestJS. Os dados emocionais e acadêmicos são protegidos com boas práticas de segurança e privacidade."
     ],
     "ano": 2022,
-    "video": "/videos/video.mp4",
+    "video": "/videos/eva_web.mp4",
     "tecnologias": [
       { "nome": "JavaScript" },
       { "nome": "NodeJS" },
@@ -46,7 +46,7 @@
       "Entre os recursos implementados estão: autenticação segura com JWT, criptografia de senhas, endpoints RESTful bem definidos, testes automatizados e validação de dados. A API garante performance, segurança e estrutura robusta para suportar o crescimento da plataforma."
     ],
     "ano": 2022,
-    "video": "/videos/video.mp4",
+    "video": "/videos/eva_web.mp4",
     "tecnologias": [
       { "nome": "TypeScript" },
       { "nome": "NodeJS" },

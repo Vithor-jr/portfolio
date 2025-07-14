@@ -121,7 +121,7 @@ export default function Projeto({ titulo, image, link, repositorio, descricao, a
                   muted
                   disablePictureInPicture
                   controlsList="nodownload nofullscreen noplaybackrate"
-                  className="w-full h-full object-cover rounded-2xl pointer-events-none"
+                  className="w-full object-cover rounded-2xl pointer-events-none"
                   style={{ WebkitUserSelect: "none" }}
                 />
               </SwiperSlide>

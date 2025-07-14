@@ -25,6 +25,7 @@ import Postgree from '../../assets/APIs/post.svg'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import TextAnimated from '@/components/TextAnimated'
+import CardNeon from '@/components/cardNeon'
 
 const ItemLanguage = ({image, label, href, index}:{image:string, label:string, href:string, index:number}) => {
 	return(
@@ -190,10 +191,11 @@ export default function Sobre(){
 				</div>
 			</div>
 
+			
 			<div className='flex mt-16 flex-row max-[900px]:flex-col px-5 justify-between w-full items-center'>
 
 				<div className='w-[30%] max-[900px]:w-full'>
-					<TextType className='text-black dark:text-white max-[900px]:mb-5' text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book" />
+					<TextType className='text-black dark:text-white max-[900px]:mb-5' text="Transformo ideias em interfaces funcionais e elegantes. Com código limpo e criatividade, desenvolvo experiências digitais que fazem a diferença. Explore meus projetos e descubra do que sou capaz." />
 				</div>
 
 				<div className='flex flex-row flex-wrap max-[600px]:w-[calc(90vw)] max-[600px]:gap-[6vw] max-[900px]:w-[calc(80vw+20px)] w-[calc(60vw+20px)] gap-x-[20px] gap-y-[2vw]'>
